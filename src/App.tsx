@@ -12,9 +12,9 @@ type Expense = {
 
 function App() {
 
-  const [expense, setExpense] = useState<string>('');
-  const [amount, setAmount] = useState<number>(0);
-  const [total, setTotal] = useState<Expense[]>([]);
+  const [expense, setExpense] = useState<string>();
+  const [amount, setAmount] = useState<number>();
+  const [total, setTotal] = useState<Expense[]>();
 
   const expenseClick = (e: React.ChangeEvent<HTMLInputElement>) => {
     setExpense(e.target.value);
